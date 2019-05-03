@@ -32,7 +32,7 @@ showNav=()=>{
     return (
       < div>
         <MainHead item={this.state.navigationItems} show={this.state.show} showNav={this.showNav}></MainHead>
-        
+
       </div>
     )
   }
