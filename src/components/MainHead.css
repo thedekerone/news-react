@@ -1,0 +1,92 @@
+.full{
+
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    background-color: rgb(248, 248, 248);
+    box-shadow: 0px 0.2px 2px 0px rgba(0,0,0,0.1);
+}
+.navbar{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-icon:hover{
+    cursor: pointer;
+    background-color: rgba(160, 160, 158,0.7);
+}
+.nav-icon{
+    position: relative;
+    z-index: 3;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    padding: 0.7rem;
+    margin-left: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Menu */
+hr{
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.menu{
+    position: absolute;
+z-index: 10;
+
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    max-width: 380px;
+    border-right: 0.3px solid grey;
+}
+.menu ul{
+    display: flex;
+
+    flex-direction: column;
+}
+.menu ul i{
+    font-size: 2rem;
+}
+.menu li{
+    color: rgb(109, 109, 105);
+    margin: 0.7rem 2rem;
+    font-size: 1.1rem;
+}
+.menu a:hover{
+    background-color: rgba(160, 160, 158,0.7); 
+}
+.menu .navbar{
+    
+    box-shadow: 0px 0.2px 2px 0px rgba(0,0,0,0.1);
+    height: 3rem;
+    align-items: center;
+}
+.menu li i{
+    font-size: 1.3rem;
+    margin-right: 1rem;
+}
+.social-icons{
+    text-align: center
+}
+.contrast{
+    background-color: rgba(0,0,0,0.4);
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0%;
+}
+.bodym{ 
+}
