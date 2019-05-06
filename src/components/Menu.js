@@ -1,7 +1,7 @@
 import React from 'react'
 import {useSpring, animated} from 'react-spring'
 const Menu=(props)=> {
-  const animar=useSpring({right: props.show?'-25%':'0%'})
+  const animar=useSpring({right: props.show?'-390px':'0%'})
   const animarfade=useSpring({opacity: props.show?'0':'1'})
   let zindex=0;
 

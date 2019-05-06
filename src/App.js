@@ -1,7 +1,7 @@
 import './App.css';
 import MainHead from'./components/MainHead'
 import React, { Component } from 'react'
-
+import News from './components/News'
 class App extends Component {
   constructor(){
     super()
@@ -30,9 +30,10 @@ showNav=()=>{
 }
   render() {
     return (
-      < div>
+      <div>
         <MainHead item={this.state.navigationItems} show={this.state.show} showNav={this.showNav}></MainHead>
-
+        <News></News>
+        <News></News>
       </div>
     )
   }
