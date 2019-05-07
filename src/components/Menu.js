@@ -1,11 +1,7 @@
 import React from 'react'
 import {useSpring, animated} from 'react-spring'
 const Menu=(props)=> {
-  const animar=useSpring({right: props.show?'-390px':'0%'})
-  const animarfade=useSpring({opacity: props.show?'0':'1'})
-  let zindex=0;
-
-  const zin={zIndex:zindex}
+  const animar=useSpring({right: props.show?'-390px':'0%'}) 
   return (
       <div className='bodym'>
         <animated.div style={{left: animar.right}}  className='menu'>
@@ -33,7 +29,7 @@ const Menu=(props)=> {
             </ul>
         </div>
     </animated.div>
-    <animated.div style={{opacity:animarfade.opacity, zIndex:zin.zIndex}}  className='contrast'></animated.div>
+    {/* <animated.div style={{opacity:animarfade.opacity, zIndex:zin.zIndex}}  className='contrast'></animated.div> */}
     </div>
 
   )
