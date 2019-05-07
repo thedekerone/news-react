@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -70,3 +71,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 =======
 # NNews
 >>>>>>> 3651a45e421edec2ca3bfa5496d45f27467925d3
+=======
+# news-react
+>>>>>>> 6c5349eca873a799a41aa3c1000a01373771553d
