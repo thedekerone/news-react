@@ -29,6 +29,7 @@ class App extends Component {
             ], 
       label:null
     },
+   
     {
       title:'Markets tumble as Trump renews China tariff threats', 
       imgPATH:'https://cdn.cnn.com/cnnnext/dam/assets/181203191811-cnndinero-xi-trump-newspaper-medium-tease.jpg',
@@ -56,6 +57,8 @@ class App extends Component {
             ],  
       label:'In Focus'
     }
+
+    
       ],
       // FIRST ROW
       [
@@ -144,7 +147,7 @@ class App extends Component {
       {
         title:'Ad here!', 
         imgPATH:'https://martechtoday.com/wp-content/uploads/2018/08/mobile-ads-phone-ss-1920_xji94m.png',
-        type:'labeled',
+        type:'wide',
         related:null,  
         label:'Weather'
       },
