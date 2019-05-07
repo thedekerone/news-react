@@ -1,4 +1,6 @@
 import React from 'react'
+import randomKey from 'random-key'
+
 
  const Card=(props)=> {
     const {article}=props
@@ -7,12 +9,14 @@ import React from 'react'
         case 'wide':
         return (
             <div className='grid-item wide'>
-                {article.label?<div className='head-label'><h3>{article.label}<div className='icon'><i class="fas fa-angle-right"></i></div> </h3></div>:null}
-              <h1>{article.title}</h1>
-              <img alt='new' src={article.imgPATH} />
+                {article.label?<div className='head-label'><h3>{article.label}<div className='icon'><i className="fas fa-angle-right"></i></div> </h3></div>:null}
+              {!article.label?<h1>{article.title}</h1>:null}
+              {article.imgPATH?<div className='img'><img alt='new' src={article.imgPATH} /> <h2>{article.title}</h2>  </div> :null}
+              {article.label?<h1>{article.title}</h1>:null}
+              
               {article.related?article.related.map((element)=>{
                       return(
-                          <div>
+                          <div key={randomKey.generate()}>
                                <hr/>
                           <div className='related-item'>
                              {element.imgPATH?<img alt='sda' src={element.imgPATH}/>:null}
@@ -29,12 +33,12 @@ import React from 'react'
             return(
                 <div className={article.related?'grid-item related':'grid-item'}>
                     <h3>{article.label}</h3>
-                    {article.imgPATH?<img alt='new' src={article.imgPATH} />:null}
-                    <h2>{article.title}</h2>
+                    {article.imgPATH?<div className='img'><img alt='new' src={article.imgPATH} /> <h2>{article.title}</h2>  </div> :null}
+                    
                     {   
                         article.related?article.related.map((element)=>{
                             return(
-                                <div>
+                                <div key={randomKey.generate()}>
                                      <hr/>
                           <div className='related-item'>
                              {element.imgPATH?<img alt='sda' src={element.imgPATH}/>:null}

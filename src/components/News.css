@@ -5,7 +5,7 @@
     align-items: flex-start;
     
 }
-.grid-container{
+.news .grid-container{
 
     margin: 0 auto;
     display: grid;
@@ -18,8 +18,7 @@
     margin: 0 0.5rem;
     font-size: 1.5rem;
     text-align: center;
-    position: relative;
-    z-index:-1 ;
+
 }
 .grid-item img{
     width: 100%;
@@ -40,6 +39,10 @@
 .related-item img{
     width: 30%;
     height: 100%;
+    position: relative;
+}
+.img{
+    position: relative;
 }
 .grid-item p{
     color: black;
@@ -61,10 +64,15 @@
     color: black;
     font-size: 2.3rem;
 }
+.img:hover h2,.img:hover,.related-item:hover p, .related-item:hover{
+    color:red;
+    cursor: pointer;
+}
+
 .grid-item h2{
     position: absolute;
     color: black;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     text-align: left;
     bottom: 0;
     width: 100%;
@@ -107,7 +115,7 @@ h3 .icon{
         background: none;
         position: relative;
     }
-    .grid-container{
+    .news .grid-container{
         grid-template: repeat(5,auto)/1fr 1fr;
     
     }
@@ -126,8 +134,9 @@ h3 .icon{
     .grid-item h2{
         background: none;
         position: relative;
+        font-size: 1.5rem;
     }
-    .grid-container{
+    .news .grid-container{
         grid-template: auto auto/ repeat(7,1fr);
 
     }

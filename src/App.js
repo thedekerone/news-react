@@ -2,6 +2,7 @@ import './App.css';
 import MainHead from'./components/MainHead'
 import React, { Component } from 'react'
 import News from './components/News'
+import Collage from './components/Collage';
 class App extends Component {
   constructor(){
     super()
@@ -15,9 +16,10 @@ class App extends Component {
       ],
       articles:[
       [
-      {title:'US accuses China of reneging on trade deal', 
-      imgPATH:'https://cdn.cnn.com/cnnnext/dam/assets/190312142104-201903--trump-us-jinping-china-tarrifs-v2-large-tease.jpg',
+      {title:'Pompeo abruptly cancels Germany trip', 
+      imgPATH:'https://cdn.cnn.com/cnnnext/dam/assets/190507124956-03-arctic-council-0507-large-tease.jpg',
       type:'wide',
+      subtitle:'US accuses China of reneging on trade deal',
       related:[{title:"US trade officials say they will act on Trump's tariff threats and slam China for derailing talks",imgPATH:null},
               {title:"Markets rebounded. Then the US said the tariff threat was real",imgPATH:null},
               {title:"The return of Tariff Man blindsides Wall Street",imgPATH:null},
@@ -121,7 +123,7 @@ class App extends Component {
       [
         {title:"'Shale is not superman.' Geopolitical chaos is testing the limits of America's oil boom", 
         imgPATH:'https://cdn.cnn.com/cnnnext/dam/assets/190502175713-shale-oil-rig-large-tease.jpg',
-        type:'wide',
+        type:'labeled',
         related:[{title:"Adidas can't make enough sportswear to meet demand",imgPATH:null},
               {title:"Scandinavian air pilot strike is over after thousands of canceled SAS flights",imgPATH:null},
               {title:"Want to work for L'Oreal? Get ready to chat with an AI bot",imgPATH:null}
@@ -142,6 +144,34 @@ class App extends Component {
       {
         title:'Ad here!', 
         imgPATH:'https://martechtoday.com/wp-content/uploads/2018/08/mobile-ads-phone-ss-1920_xji94m.png',
+        type:'labeled',
+        related:null,  
+        label:'Weather'
+      },
+      // FASFGFDS
+        {title:"'Shale is not superman.' Geopolitical chaos is testing the limits of America's oil boom", 
+        imgPATH:'https://cdn.cnn.com/cnnnext/dam/assets/190506171347-kaito-toba-spt-intl-large-tease.jpg',
+        type:'labeled',
+        related:[{title:"Adidas can't make enough sportswear to meet demand",imgPATH:null},
+              {title:"Scandinavian air pilot strike is over after thousands of canceled SAS flights",imgPATH:null},
+              {title:"Want to work for L'Oreal? Get ready to chat with an AI bot",imgPATH:null}
+            ],  
+        label:'CNN Business'
+      },
+      {
+        title:'The tunnel that changed Europe forever', 
+        imgPATH:'https://cdn.cnn.com/cnnnext/dam/assets/190507110642-ozwald-boateng-tease-large-tease.jpg',
+        type:'labeled',
+        related:[{title:"The world's most positive countries",imgPATH:null},
+              {title:"Celebrating the piña colada's birthplace",imgPATH:null},
+              {title:"Most beautiful places on Earth",imgPATH:null},
+              {title:"Is it worth it to fly an ultra-low-cost airline?",imgPATH:null}
+            ], 
+        label:'Top Stories'
+      },
+      {
+        title:'Ad here!', 
+        imgPATH:'https://cdn.cnn.com/cnnnext/dam/assets/170807181735-herbs-and-spices-ginger-large-tease.jpg',
         type:'labeled',
         related:null,  
         label:'Weather'
@@ -175,7 +205,7 @@ showNav=()=>{
         <News articles={this.state.articles[1]}></News>
         <News articles={this.state.articles[2]}></News>
         <div className='corte'><h1>Featured Section</h1> <div className='hrs'><hr/><hr/></div></div>
-        <News articles={this.state.articles[3]}></News>
+        <Collage articles={this.state.articles[3]}></Collage>
       </div>
     )
   }
