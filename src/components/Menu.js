@@ -27,9 +27,9 @@ const Menu=(props)=> {
         <hr></hr>
         <div className='social-icons'>
             <ul>
-                <li><i className="fab fa-facebook-square"></i></li>
-                <li><i className="fab fa-twitter-square"></i></li>
-                <li><i className="fab fa-instagram"></i></li>
+                <li><i className="fab fa-facebook-square"></i>facebook</li>
+                <li><i className="fab fa-twitter-square"></i>Twitter</li>
+                <li><i className="fab fa-instagram"></i>Instagram</li>
             </ul>
         </div>
     </animated.div>

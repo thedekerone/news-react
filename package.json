@@ -1,9 +1,9 @@
-
 {
   "homepage": "https://thedekerone.github.io/NNews/",
   "name": "web-project",
   "version": "0.1.0",
   "private": true,
+  "homepage": "link-to-your-repository",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
