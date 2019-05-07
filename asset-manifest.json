@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/news-react/static/css/main.d31fca61.chunk.css",
+    "main.css": "/news-react/static/css/main.351a5865.chunk.css",
     "main.js": "/news-react/static/js/main.07abe745.chunk.js",
     "main.js.map": "/news-react/static/js/main.07abe745.chunk.js.map",
     "runtime~main.js": "/news-react/static/js/runtime~main.c6a7679f.js",
@@ -8,8 +8,8 @@
     "static/js/2.b1309973.chunk.js": "/news-react/static/js/2.b1309973.chunk.js",
     "static/js/2.b1309973.chunk.js.map": "/news-react/static/js/2.b1309973.chunk.js.map",
     "index.html": "/news-react/index.html",
-    "precache-manifest.da5312b085fdc42df5d6e14b9b31831a.js": "/news-react/precache-manifest.da5312b085fdc42df5d6e14b9b31831a.js",
+    "precache-manifest.4d9569e34f2467c0fe7ba1fe6d9e2d84.js": "/news-react/precache-manifest.4d9569e34f2467c0fe7ba1fe6d9e2d84.js",
     "service-worker.js": "/news-react/service-worker.js",
-    "static/css/main.d31fca61.chunk.css.map": "/news-react/static/css/main.d31fca61.chunk.css.map"
+    "static/css/main.351a5865.chunk.css.map": "/news-react/static/css/main.351a5865.chunk.css.map"
   }
 }
