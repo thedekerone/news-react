@@ -121,7 +121,7 @@ class App extends Component {
       [
         {title:"'Shale is not superman.' Geopolitical chaos is testing the limits of America's oil boom", 
         imgPATH:'https://cdn.cnn.com/cnnnext/dam/assets/190502175713-shale-oil-rig-large-tease.jpg',
-        type:'labeled',
+        type:'wide',
         related:[{title:"Adidas can't make enough sportswear to meet demand",imgPATH:null},
               {title:"Scandinavian air pilot strike is over after thousands of canceled SAS flights",imgPATH:null},
               {title:"Want to work for L'Oreal? Get ready to chat with an AI bot",imgPATH:null}
