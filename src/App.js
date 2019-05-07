@@ -27,6 +27,7 @@ class App extends Component {
             ], 
       label:null
     },
+   
     {
       title:'Markets tumble as Trump renews China tariff threats', 
       imgPATH:'https://cdn.cnn.com/cnnnext/dam/assets/181203191811-cnndinero-xi-trump-newspaper-medium-tease.jpg',
@@ -54,6 +55,8 @@ class App extends Component {
             ],  
       label:'In Focus'
     }
+
+    
       ],
       // FIRST ROW
       [
@@ -121,7 +124,7 @@ class App extends Component {
       [
         {title:"'Shale is not superman.' Geopolitical chaos is testing the limits of America's oil boom", 
         imgPATH:'https://cdn.cnn.com/cnnnext/dam/assets/190502175713-shale-oil-rig-large-tease.jpg',
-        type:'wide',
+        type:'labeled',
         related:[{title:"Adidas can't make enough sportswear to meet demand",imgPATH:null},
               {title:"Scandinavian air pilot strike is over after thousands of canceled SAS flights",imgPATH:null},
               {title:"Want to work for L'Oreal? Get ready to chat with an AI bot",imgPATH:null}
@@ -142,7 +145,7 @@ class App extends Component {
       {
         title:'Ad here!', 
         imgPATH:'https://martechtoday.com/wp-content/uploads/2018/08/mobile-ads-phone-ss-1920_xji94m.png',
-        type:'labeled',
+        type:'wide',
         related:null,  
         label:'Weather'
       }
