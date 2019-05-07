@@ -6,6 +6,7 @@
   "dependencies": {
     "random-key": "^0.3.2",
     "react": "^16.8.6",
+    "react-adsense": "0.0.6",
     "react-dom": "^16.8.6",
     "react-redux": "^7.0.3",
     "react-scripts": "3.0.0",

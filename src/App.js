@@ -3,6 +3,7 @@ import MainHead from'./components/MainHead'
 import React, { Component } from 'react'
 import News from './components/News'
 import Collage from './components/Collage';
+import AdSense from 'react-adsense'
 class App extends Component {
   constructor(){
     super()
@@ -154,7 +155,7 @@ class App extends Component {
       // FASFGFDS
         {title:"'Shale is not superman.' Geopolitical chaos is testing the limits of America's oil boom", 
         imgPATH:'https://cdn.cnn.com/cnnnext/dam/assets/190506171347-kaito-toba-spt-intl-large-tease.jpg',
-        type:'labeled',
+        type:'ad',
         related:[{title:"Adidas can't make enough sportswear to meet demand",imgPATH:null},
               {title:"Scandinavian air pilot strike is over after thousands of canceled SAS flights",imgPATH:null},
               {title:"Want to work for L'Oreal? Get ready to chat with an AI bot",imgPATH:null}
@@ -164,7 +165,7 @@ class App extends Component {
       {
         title:'The tunnel that changed Europe forever', 
         imgPATH:'https://cdn.cnn.com/cnnnext/dam/assets/190507110642-ozwald-boateng-tease-large-tease.jpg',
-        type:'labeled',
+        type:'ad',
         related:[{title:"The world's most positive countries",imgPATH:null},
               {title:"Celebrating the piña colada's birthplace",imgPATH:null},
               {title:"Most beautiful places on Earth",imgPATH:null},
@@ -174,8 +175,8 @@ class App extends Component {
       },
       {
         title:'Ad here!', 
-        imgPATH:'https://cdn.cnn.com/cnnnext/dam/assets/170807181735-herbs-and-spices-ginger-large-tease.jpg',
-        type:'labeled',
+        
+        type:'ad',
         related:null,  
         label:'Weather'
       }
@@ -190,6 +191,7 @@ class App extends Component {
   componentWillMount(){
     this.showNav()
   }
+
 showNav=()=>{
   this.setState({
     ...this.state,
@@ -199,16 +201,31 @@ showNav=()=>{
   })
 
 }
+
   render() {
+    
     return (
       <div>
+
         <MainHead item={this.state.navigationItems} show={this.state.show} showNav={this.showNav}></MainHead>
         <News articles={this.state.articles[0]}></News>
         {/* <img alt='das' width='50%' height='150px' className='center' src='https://www.looofa.com/images/ad_web.png'/> */}
         <News articles={this.state.articles[1]}></News>
         <News articles={this.state.articles[2]}></News>
         <div className='corte'><h1>Featured Section</h1> <div className='hrs'><hr/><hr/></div></div>
+
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+{/* <ins className="adsbygoogle"
+     style={{display:'block'}}
+     data-ad-format="fluid"
+     data-ad-layout-key="-6t+ed+2i-1n-4w"
+     data-ad-client="ca-pub-3527634309961159"
+     data-ad-slot="2382985255"></ins> */}
+  <AdSense.Google
+  client='ca-pub-3527634309961159' slot='2382985255'
+  />
         <Collage articles={this.state.articles[3]}></Collage>
+        
       </div>
     )
   }

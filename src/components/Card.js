@@ -1,5 +1,6 @@
 import React from 'react'
 import randomKey from 'random-key'
+import AdSense from 'react-adsense'
 
 
  const Card=(props)=> {
@@ -22,11 +23,19 @@ import randomKey from 'random-key'
                              {element.imgPATH?<img alt='sda' src={element.imgPATH}/>:null}
                           <p>{element.title}</p>
                           </div>    
-                         
+
                           </div>
                       )
                   }):null}
             </div>
+          )
+          case 'ad':
+          return(
+              <div className='grid-item'>
+                   <AdSense.Google
+  client='ca-pub-3527634309961159' slot='2382985255'
+  />
+              </div>
           )
         default:
     
