@@ -2,7 +2,7 @@
   "name": "web-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://thedekerone.github.io/news-react/",
+  "homepage": "https://ttalking.site/",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
