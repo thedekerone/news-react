@@ -3,4 +3,34 @@
 }
 body{
     text-align: center;
+
+}
+.corte{
+    display: flex;
+    align-items: flex-end;
+    
+    margin: 0 auto;
+    max-width: 1100px;
+}
+.corte h1{
+    color:black;
+    font-size: 2em;
+    font-weight: lighter;
+
+
+}
+.hrs hr{
+    margin:0.06rem 0;
+    border: 0;
+    background-color: rgb(197, 190, 190);
+    height: 3px;
+    width: 100%;
+}
+.hrs{
+    padding-bottom: 0.4rem;
+    width: 70%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
 }

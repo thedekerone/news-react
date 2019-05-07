@@ -13,11 +13,12 @@ import React from 'react'
               {article.related?article.related.map((element)=>{
                       return(
                           <div>
+                               <hr/>
                           <div className='related-item'>
                              {element.imgPATH?<img alt='sda' src={element.imgPATH}/>:null}
                           <p>{element.title}</p>
                           </div>    
-                          <hr/>
+                         
                           </div>
                       )
                   }):null}
@@ -28,17 +29,18 @@ import React from 'react'
             return(
                 <div className={article.related?'grid-item related':'grid-item'}>
                     <h3>{article.label}</h3>
-                    <img alt='new' src={article.imgPATH} />
+                    {article.imgPATH?<img alt='new' src={article.imgPATH} />:null}
                     <h2>{article.title}</h2>
                     {   
                         article.related?article.related.map((element)=>{
                             return(
                                 <div>
+                                     <hr/>
                           <div className='related-item'>
                              {element.imgPATH?<img alt='sda' src={element.imgPATH}/>:null}
                           <p>{element.title}</p>
                           </div>    
-                          <hr/>
+                         
                           </div>
                             )
                         }):null
