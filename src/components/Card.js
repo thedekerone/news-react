@@ -12,15 +12,15 @@ import AdSense from 'react-adsense'
             <div className='grid-item wide'>
                 {article.label?<div className='head-label'><h3>{article.label}<div className='icon'><i className="fas fa-angle-right"></i></div> </h3></div>:null}
               {!article.label?<h1>{article.title}</h1>:null}
-              {article.imgPATH?<div className='img'><img alt='new' src={article.imgPATH} /> <h2>{article.title}</h2>  </div> :null}
-              {article.label?<h1>{article.title}</h1>:null}
+              {article.urlToImage?<div className='img'><img alt='new' src={article.urlToImage} />{article.label?<h2>{article.title}</h2>:null}   </div> :null}
+
               
               {article.related?article.related.map((element)=>{
                       return(
                           <div key={randomKey.generate()}>
                                <hr/>
                           <div className='related-item'>
-                             {element.imgPATH?<img alt='sda' src={element.imgPATH}/>:null}
+                             {element.urlToImage?<img alt='sda' src={element.urlToImage}/>:null}
                           <p>{element.title}</p>
                           </div>    
 
@@ -42,7 +42,7 @@ import AdSense from 'react-adsense'
             return(
                 <div className={article.related?'grid-item related':'grid-item'}>
                     <h3>{article.label}</h3>
-                    {article.imgPATH?<div className='img'><img alt='new' src={article.imgPATH} /> <h2>{article.title}</h2>  </div> :null}
+                    {article.urlToImage?<div className='img'><img alt='new' src={article.urlToImage} /> <h2>{article.title}</h2>  </div> :null}
                     
                     {   
                         article.related?article.related.map((element)=>{
@@ -50,7 +50,7 @@ import AdSense from 'react-adsense'
                                 <div key={randomKey.generate()}>
                                      <hr/>
                           <div className='related-item'>
-                             {element.imgPATH?<img alt='sda' src={element.imgPATH}/>:null}
+                             {element.urlToImage?<img alt='sda' src={element.urlToImage}/>:null}
                           <p>{element.title}</p>
                           </div>    
                          
