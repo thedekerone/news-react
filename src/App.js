@@ -196,7 +196,7 @@ class App extends Component {
     this.showNav()
   }
   componentDidMount(){
-    axios.get('https://newsapi.org/v2/top-headlines?country=de&category=business&apiKey=2297410c24494e6ca846b19e08376bd3').then(
+    axios.get('https://newsapi.org/v2/everything?q=technology&pageSize=100&apiKey=2297410c24494e6ca846b19e08376bd3').then(
       res=>{
         console.log(res.data);
         const select=(gaa,a,b,c,d)=>{
